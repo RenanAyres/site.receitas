@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'peachcake';
+    src: url('../fontes/Peach\ Cake.otf'); format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #ba70bd;
+    --cor2: #70dba9;
+    --cor3: #db70ad;
+    --cor4: #75db70;
+    --cor5: #fbbddb;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --font-peachcake: 'peachcake', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor5);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\1f517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2, var(--cor4)));
+    background-color: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.416);
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-peachcake);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.31);
+    
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 15px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.422);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+
+main h2 {
+     color: var(--cor4);
+     font-family: var(--font-peachcake);
+     font-size: 1.5em;
+     background-image: linear-gradient(to left, var(--cor5), transparent);
+     text-indent: 8px;
+     padding-top: 3px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main > img {
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
